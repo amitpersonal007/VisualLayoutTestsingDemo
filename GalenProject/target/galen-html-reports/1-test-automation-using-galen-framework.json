@@ -1,0 +1,17 @@
+{
+  "testId" : "1-test-automation-using-galen-framework",
+  "name" : "Test Automation Using Galen Framework",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify logo present and log image comparison",
+      "status" : "info",
+      "time" : 1674728506129,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ ],
+      "objects" : { },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

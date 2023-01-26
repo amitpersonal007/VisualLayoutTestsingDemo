@@ -1,0 +1,119 @@
+{
+  "testId" : "1-test-automation-using-galen-framework",
+  "name" : "Test Automation Using Galen Framework",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify logo present and log image comparison",
+      "status" : "error",
+      "time" : 1674732158362,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "=Main Section",
+        "place" : {
+          "filePath" : "/Users/amits/eclipse-workspace/GalenProject/GelenSpecs/specfile.gspec",
+          "lineNumber" : 5
+        },
+        "objects" : [ {
+          "name" : "ohrmlogo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/Users/amits/eclipse-workspace/GalenProject/GelenSpecs/specfile.gspec",
+              "lineNumber" : 9
+            },
+            "name" : "width ~ 160px",
+            "meta" : [ {
+              "from" : {
+                "object" : "ohrmlogo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "ohrmlogo",
+                "edge" : "right"
+              },
+              "expectedDistance" : "158 to 162px",
+              "realDistance" : "160px"
+            } ],
+            "highlight" : [ "ohrmlogo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/Users/amits/eclipse-workspace/GalenProject/GelenSpecs/specfile.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "height ~ 40px",
+            "meta" : [ {
+              "from" : {
+                "object" : "ohrmlogo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "ohrmlogo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "38 to 42px",
+              "realDistance" : "40px"
+            } ],
+            "highlight" : [ "ohrmlogo" ]
+          } ]
+        }, {
+          "name" : "bookdemobutton",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/Users/amits/eclipse-workspace/GalenProject/GelenSpecs/specfile.gspec",
+              "lineNumber" : 12
+            },
+            "name" : "width ~ 185px",
+            "errors" : [ "\"bookdemobutton\" width is 189px which is not in range of 183 to 187px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "bookdemobutton",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "bookdemobutton",
+                "edge" : "right"
+              },
+              "expectedDistance" : "183 to 187px",
+              "realDistance" : "189px"
+            } ],
+            "highlight" : [ "bookdemobutton" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/Users/amits/eclipse-workspace/GalenProject/GelenSpecs/specfile.gspec",
+              "lineNumber" : 13
+            },
+            "name" : "height ~ 40px",
+            "errors" : [ "\"bookdemobutton\" height is 22px which is not in range of 38 to 42px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "bookdemobutton",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "bookdemobutton",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "38 to 42px",
+              "realDistance" : "22px"
+            } ],
+            "highlight" : [ "bookdemobutton" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "bookdemobutton" : {
+          "area" : [ 1276, 35, 189, 22 ]
+        },
+        "ohrmlogo" : {
+          "area" : [ 47, 29, 160, 40 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

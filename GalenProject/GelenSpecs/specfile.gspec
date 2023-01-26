@@ -1,0 +1,17 @@
+@objects
+    ohrmlogo            img[src='/_resources/themes/orangehrm/dist/images/OrangeHRM_Logo.svg']
+    bookdemobutton      div[class='d-flex web-menu-btn'] li:nth-child(1) a:nth-child(1)
+    
+==Main Section=
+
+     @on desktop
+          ohrmlogo:
+              width ~ 160px 
+              height ~ 40px 
+          bookdemobutton:
+             width ~ 185px
+             height ~ 40px
+              
+          
+    
+   
